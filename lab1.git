@@ -1,1 +1,3 @@
-
+git clone cs61b-taa@derby.cs.berkeley.edu:students/cs61b-yaqundeng repo
+cd repo
+git remote add shared cs61b-taa@derby.cs.berkeley.edu:shared 
