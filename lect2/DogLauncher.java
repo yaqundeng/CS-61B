@@ -1,5 +1,6 @@
 public class DogLauncher{
-    public void main (String[] args){
-        Dog.makeNoise();
+    public static void main (String[] args){
+        Dog d = new Dog(23);
+        d.makeNoise();
     }
 }
