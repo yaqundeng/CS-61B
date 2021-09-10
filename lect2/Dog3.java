@@ -1,21 +1,25 @@
 public class Dog{
-    int WeightinPounds;
-    
+    int weightinpounds;//the property of the Dog class
+
     public Dog(int w){
-        WeightinPounds=w;
+        weightinpounds=w; //constructor of the dog class, parameter in braces
+        }
+
+    public void makenoise(){
+        if(weightinpounds < 10){
+            System.out.println("yip!");
+        }
+        else if( weightinpounds < 30){
+            System.out.println("bark.");
+        }else{
+            System.out.println("woof!");
+        }
     }
 
-
-    public void makeNoise(){
-        if (WeightinPounds <10){
-            System.out.println("yip!");
-         }
-        else if (WeightinPounds <30){
-            System.out.println("bark.");
-         }
-        else{
-            System.out.println("wooof!");
+    public static Dog biggerdog( Dog d1, Dog d2){
+        if(d1.weightinpounds > d2. weightinpounds){
+            return d1;
         }
-        
-     }
+        return d2;
+    }
 }
